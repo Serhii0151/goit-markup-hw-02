@@ -1,0 +1,35 @@
+body{
+    background: #E5E5E5;
+    color: 757575;
+}
+
+ /* Основной цвет макета - #E5E5E5 */
+
+ /* Вторичный цвет текст - #212121 */
+
+/* акцент - #2196F3 */
+
+/* list { list-style: none;} Вставка link в ul Сбросит все например li, где есть эта link */
+
+
+
+  /* Оформление цвета на кнопках */
+ul {
+    list-style: none;
+}
+
+span {
+    color: #2196F3;
+}
+
+.studio {
+color: #2196F3;
+}
+.mail {
+    color: #2196F3;
+}
+
+.service {
+  color:   #2196F3;
+}
+
