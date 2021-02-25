@@ -3,57 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css" integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!-- Page header-->
- <header>
+ <header class="header">
     <!-- Site Navigation -->
-    <nav>
-    <a href="./index.html"><span class="logo">Web</span>Studio</a>
-        <ul class="main">
-            <li><a href="/" class="studio">Студия</a></li>
-            <li><a href="http://127.0.0.1:5500/index2.html">Портфолио</a></li>
-            <li><a href="/">Контакты</a></li>
-        </ul>
+    <nav class="navigation">
+        <a class="logo link" href="./index.html"><span>Web</span>Studio</a>
+            <ul class="navigation-list list">
+                <li class="navigation-item">
+                    <a class="navigation-link link" href="./index.html">Студия</a></li>
+                <li class="navigation-item">
+                    <a class="navigation-link link" href="./portfolio.html">Портфолио</a></li>
+                <li class="navigation-item">
+                    <a class="navigation-link link" href="/">Контакты</a></li>
+            </ul>
     </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com" class="mail">Email</a></li>
-            <li><a href="tel:+380961111111">Phone</a></li>
-        </ul>
+            <ul class="navigation-list list">
+                <li><a class="navigation-link link" class="contacts.link" href="mailto:info@devstudio.com">Email</a></li>
+                <li><a class="navigation-link link" class="contacts.link" href="tel:+380961111111">Phone</a></li>
+            </ul>
  </header>
 <main>
-        <!-- Header 1 -->
-        <section>
-            <h1>Эффективные решения для вашего бизнеса</h1>
-           <button class="service">Заказать услугу</button>
+        <!-- Header 1 (HERO) -->
+        <section class="hero">
+            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+           <button class="modal-btn" type="button">Заказать услугу</button>
         </section>
      <!-- Header 2 -->
-    <section>
-        <ul>
-            <li>
-                <h3>Внимание к деталям</h3>
-                <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+    <section class="section">
+        <ul class="list">
+            <li class="description-item">
+                <h3 class="section-title">Внимание к деталям</h3>
+                <p class="description-list">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-            <li>
-                <h3>Пунктуальность</h3>
-                <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+            <li class="description-item">
+                <h3 class="section-title">Пунктуальность</h3>
+                <p class="description-list">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
-            <li>
-                <h3>Планирование</h3>
-                <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+            <li class="description-item">
+                <h3 class="section-title">Планирование</h3>
+                <p class="description-list">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
-            <li>
-                <h3>Современные технологии</h3>
-                <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+            <li class="description-item">
+                <h3 class="section-title">Современные технологии</h3>
+                <p class="description-list">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
         </ul>
     </section>   
     <!-- What we do -->
-        <section>
-            <h2>Чем мы занимаемся</h2>
-            <ul>
+        <section class="section">
+            <h2 class="section-title">Чем мы занимаемся</h2>
+            <ul class="list">
                 <li>
                     <img src="./images/box1.jpg" alt="hands of man typing on keyboard" width="370">
                 </li>
@@ -67,48 +73,48 @@
         </section>
 
     <!-- Our team -->
-        <section>
-            <h2>Наша команда</h2>
-                <ul>
+        <section class="section">
+            <h2 class="section-title">Наша команда</h2>
+                <ul class="list">
                     <li>
                         <img src="./images/img(7).jpg" alt="фото Игоря Демьяненко продукт Дизайнера" width="270"> 
-                        <h3>Игорь Демьяненко</h3>
-                        <p>Product Designer</p>
+                        <h3 class="section-title">Игорь Демьяненко</h3>
+                        <p class="section-description">Product Designer</p>
                     </li>
                     <li>
                         <img src="./images/img(4).jpg" alt="фото Ольги Репиной Фронтенд Разработчицы" width="270"> 
-                        <h3>Ольга Репина</h3>
-                        <p>Frontend Developer</p>
+                        <h3 class="section-title">Ольга Репина</h3>
+                        <p class="section-description">Frontend Developer</p>
                     </li>
                     <li>
                         <img src="./images/img(5).jpg" alt="фото Николая Тарасова маркетинг Менеджера" width="270"> 
-                        <h3>Николай Тарасов</h3>
-                        <p>Marketing</p>
+                        <h3 class="section-title">Николай Тарасов</h3>
+                        <p class="section-description">Marketing</p>
                     </li>
                     <li>
                         <img src="./images/img(6).jpg" alt="фото Михаила Ермакова интерфейс Разработчика" width="270"> 
-                        <h3>Михаил Ермаков</h3>
-                        <p>UI Designer</p>
+                        <h3 class="section-title">Михаил Ермаков</h3>
+                        <p class="section-description">UI Designer</p>
                     </li>
                 </ul>
         </section>
     </main>
    <!-- Footer -->
         <section>
-           <h3>Contacts</h3>
- <a href="./index.html"><span>Web</span>Studio</a>
-            <address>
-                <ul> 
+           <!-- <h3>Contacts</h3> -->
+ <a class="link" href="./index.html"><span>Web</span>Studio</a>
+            <address class="address">
+                <ul class="site-nav list"> 
                     <li>
-                        <a href="https://goo.gl/maps/X1yvUjmJg16SnbM39" target="_blank" rel="noopener noreferrer">
+                        <a class="link" href="https://goo.gl/maps/X1yvUjmJg16SnbM39" target="_blank" rel="noopener noreferrer" class="button">
                             г. Киев,
                         пр-т Леси Украинки,26></a>
                     </li>
                     <li>
-                        <a href="mailto:info@example.com" target="_blank">Email</a>
+                        <a class="link" href="mailto:info@example.com" target="_blank" class="button">Email</a>
                     </li>
                     <li>
-                        <a href="tel:+380991111111" target="_blank">Phone number</a>
+                        <a class="link" href="tel:+380991111111" target="_blank" class="button">Phone number</a>
                     </li>
                 </ul>    
             </address>
