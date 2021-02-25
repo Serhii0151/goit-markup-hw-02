@@ -2,8 +2,10 @@
 accent-color - цвет которым выделяется элемент (кнопка, ссылка) 
 */ 
 :root {
+    --main-font: 'Roboto', sans-serif;
+    /* --secondary-font: font-family: 'Raleway', sans-serif; */
     --primary-text-color: rgb(33, 33, 33);
-    --accent-color: rgb(33, 150, 243);
+    --accent-color:  #2196F3;
     --primary-white-color: rgb(238, 238, 238);
 } 
 
@@ -31,16 +33,15 @@ accent-color - цвет которым выделяется элемент (кн
 
 
  /*========== <Header> ============*/
+ 
  .header {
-    font-family: Roboto;
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    
-    color: #212121;    
+    color: var(--primary-text-color);
 }
   /*========== <Header> ============*/
 
@@ -63,13 +64,12 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    
-    color: #212121;
+    color: var(--primary-text-color);
   }
 
   .navigation-link:hover,
   .navigation-link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
   }
 
  .contacts.link {
@@ -97,7 +97,7 @@ body {
 }
 
 .modal-btn {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.87;
@@ -112,7 +112,7 @@ body {
 
 .modal.btn:hover,
 .modal.btn:focus{
-    background: #2196F3;
+    background: var(--accent-color);
     color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -120,37 +120,33 @@ body {
 /*===========END HERO========== */
 
 
-
-
- /* ==========MAIN СТУДИЯ========== */
+ /* ==========HEADER 2========== */
 
  /* .section{} на потом*/
 
  /* .list {}  на потом*/
 
- .description-item {
+ .section-title {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #212121;
+    /* text-transform: uppercase; */
+    color: var(--primary-text-color);
 }
 
-.section-title {
+.description-list {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
     /* or 171% */
-
     letter-spacing: 0.03em;
-
     color: #757575;
 }
- /* ========== END MAIN и Header 2 СТУДИЯ========== */
+/* ========== END HEADER 2========== */
 
  /* ==========What we do ========== */
 
@@ -161,8 +157,46 @@ body {
     line-height: 1.16;
     /* text-align: center; */
     letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
 
-    color: #212121;}
+/*=========== OUR TEAM======== */
+
+.section-team {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.43;
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.team-title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    /* identical to box height */
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.team-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.18;
+    /* identical to box height */
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+/*===========END OUR TEAM======== */
+
+
+
 
 
 
