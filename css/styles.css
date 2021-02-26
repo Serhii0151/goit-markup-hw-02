@@ -3,10 +3,11 @@ accent-color - цвет которым выделяется элемент (кн
 */ 
 :root {
     --main-font: 'Roboto', sans-serif;
-    /* --secondary-font: font-family: 'Raleway', sans-serif; */
+    --secondary-font: font-family: 'Raleway', sans-serif;
     --primary-text-color: rgb(33, 33, 33);
     --accent-color:  #2196F3;
-    --primary-white-color: rgb(238, 238, 238);
+    --white-color: rgb(238, 238, 238);
+    --grey-color: #757575;
 } 
 
 /*========== <УБИРАЕТ ОФОРМЛЕНИЕ ТЕКСТА > ============*/
@@ -30,36 +31,55 @@ accent-color - цвет которым выделяется элемент (кн
     }
     /*========== <УБИРАЕТ КУРСИВНЫЙ ШРИФТ У АДРЕС> ============*/
 
+    /*============ <Body> =============*/
+body { 
+    font-family: var(--main-font);
+    color: var(--primary-text-color);
+    font-size: 16px;
+    background: var(--white-color)
+    /* letter-spacing: 3%; */
+}
+  /*=========== <End body> ============*/
+
 
 
  /*========== <Header> ============*/
  
  .header {
-    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: var(--primary-text-color);
 }
+
+.logo {
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.logo:hover,
+.logo:focus {
+    color: var(--accent-color);
+}
+.light-theme {
+    color: var(--primary-text-color);
+}
+.dark-theme {
+    color: var(--white-color);
+}
+
   /*========== <Header> ============*/
 
 
 
-  /*======= <body> =======*/
-body { 
-    color: var(--primary-text-color);
-    font-size: 16px;
-    background: #f5f4fa;
-    letter-spacing: 3%;
-}
-  /*====== <End body> =======*/
-
-
-  /*======Navigation======= */
-  .navigation-link{
-    font-family: 'Roboto', sans-serif;
+  /*===========Navigation============ */
+.navigation-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -67,25 +87,28 @@ body {
     color: var(--primary-text-color);
   }
 
-  .navigation-link:hover,
-  .navigation-link:focus {
+.current {
+    color: var(--accent-color);
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
     color: var(--accent-color);
   }
 
- .contacts.link {
-    font-family: 'Roboto', sans-serif;
+.contacts-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
- }
+    color: var(--grey-color);
+}
 
-/*=======END Navigation======= */
+/*=========END Navigation========== */
 
-/*===========HERO========== */
+
+/*===============HERO============== */
 .hero-title {
-    font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -93,11 +116,10 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .modal-btn {
-    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.87;
@@ -106,28 +128,27 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--white-color);
     cursor: pointer;
 }
 
 .modal.btn:hover,
 .modal.btn:focus{
     background: var(--accent-color);
-    color: #FFFFFF;
+    color: var(--white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
-/*===========END HERO========== */
+/*=============END HERO============= */
 
 
- /* ==========HEADER 2========== */
+ /* =============HEADER 2============= */
 
  /* .section{} на потом*/
 
  /* .list {}  на потом*/
 
- .section-title {
-    font-family: 'Roboto', sans-serif;
+.section-title {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
@@ -137,21 +158,20 @@ body {
 }
 
 .description-list {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
     /* or 171% */
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--grey-color);
 }
 /* ========== END HEADER 2========== */
 
- /* ==========What we do ========== */
 
-.section-title {
-    font-family: 'Roboto', sans-serif;
+
+ /* ==========What we do ============ */
+
+ .section-title {
     font-weight: bold;
     font-size: 36px;
     line-height: 1.16;
@@ -159,11 +179,12 @@ body {
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
+/* ========== END What we do ============ */
 
-/*=========== OUR TEAM======== */
+
+/*============= OUR TEAM============== */
 
 .section-team {
-    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 36px;
     line-height: 1.43;
@@ -173,7 +194,6 @@ body {
 }
 
 .team-title{
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -184,14 +204,13 @@ body {
 }
 
 .team-description {
-    font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 16px;
     line-height: 1.18;
     /* identical to box height */
     /* text-align: center; */
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--grey-color);
 }
 /*===========END OUR TEAM======== */
 
