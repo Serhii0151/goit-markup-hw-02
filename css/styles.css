@@ -4,7 +4,7 @@ accent-color - цвет которым выделяется элемент (кн
 :root {
     --main-font: 'Roboto', sans-serif;
     --secondary-font: font-family: 'Raleway', sans-serif;
-    --primary-text-color: rgb(33, 33, 33);
+    --primary-text-color: rgba(33, 33, 33,1);
     --accent-color:  #2196F3;
     --white-color: rgb(238, 238, 238);
     --grey-color: #757575;
@@ -30,6 +30,16 @@ accent-color - цвет которым выделяется элемент (кн
     font-style: normal;
     }
     /*========== <УБИРАЕТ КУРСИВНЫЙ ШРИФТ У АДРЕС> ============*/
+
+
+    /*========== <FOOTER  " для видения названия, затем убрать!> ============*/
+.footer {
+    background-color: var(--primary-text-color);
+}
+    /*========== <END FOOTER> ============*/
+
+
+
 
     /*============ <Body> =============*/
 body { 
@@ -85,6 +95,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    cursor: pointer;
   }
 
 .current {
@@ -117,6 +128,7 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
+    background-color: var(--primary-text-color);
 }
 
 .modal-btn {
@@ -154,7 +166,6 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    /* text-transform: uppercase; */
     color: var(--primary-text-color);
 }
 
@@ -216,7 +227,22 @@ body {
 /*===========END OUR TEAM======== */
 
 
+/*===========FOOTER======== */
+.footer-link {
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
 
+.location {
+    color: rgb(255, 255, 255);
+}
+    
+    /*===========END FOOTER======== */
 
 
 
