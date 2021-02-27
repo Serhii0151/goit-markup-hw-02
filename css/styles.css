@@ -40,7 +40,7 @@ body {
     font-family: var(--main-font);
     color: var(--primary-text-color);
     font-size: 16px;
-    background: var(--white-color)
+    background: var(--white-color);
     /* letter-spacing: 3%; */
 }
   /*=========== <End body> ============*/
@@ -155,9 +155,9 @@ body {
 
  /* .list {}  на потом*/
 
-.section-title {
+ .section-title {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
@@ -177,7 +177,7 @@ body {
 
  /* ==========What we do ============ */
 
- .section-title {
+ .occupation-title {
     font-weight: bold;
     font-size: 36px;
     line-height: 1.16;
@@ -238,7 +238,7 @@ body {
 
 .footer {
     background-color: var(--primary-text-color);
-    
+ }
 /* фон background-color в последствии убрать! */
 /*===========END FOOTER============== */
 
