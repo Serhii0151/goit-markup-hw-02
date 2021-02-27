@@ -32,12 +32,6 @@ accent-color - цвет которым выделяется элемент (кн
     /*========== <УБИРАЕТ КУРСИВНЫЙ ШРИФТ У АДРЕС> ============*/
 
 
-    /*========== <FOOTER  " для видения названия, затем убрать!> ============*/
-.footer {
-    background-color: var(--primary-text-color);
-}
-    /*========== <END FOOTER> ============*/
-
 
 
 
@@ -224,10 +218,10 @@ body {
     letter-spacing: 0.03em;
     color: var(--grey-color);
 }
-/*===========END OUR TEAM======== */
+/*===========END OUR TEAM============ */
 
 
-/*===========FOOTER======== */
+/*============FOOTER============== */
 .footer-link {
     font-family: var(--main-font);
     font-weight: normal;
@@ -241,8 +235,12 @@ body {
 .location {
     color: rgb(255, 255, 255);
 }
+
+.footer {
+    background-color: var(--primary-text-color);
     
-    /*===========END FOOTER======== */
+/* фон background-color в последствии убрать! */
+/*===========END FOOTER============== */
 
 
 
