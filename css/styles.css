@@ -92,10 +92,20 @@ body {
     cursor: pointer;
   }
 
+.icon {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+
   /* ДЛЯ ИЗМЕНЕНИЯ ЦВЕТА EMAIL И TEL */
 .contact-list {
     color: #757575;
 }
+/* ДЛЯ ИЗМЕНЕНИЯ ЦВЕТА EMAIL И TEL */
 
 .current {
     color: var(--accent-color);
