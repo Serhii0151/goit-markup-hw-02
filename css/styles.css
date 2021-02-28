@@ -35,8 +35,6 @@ accent-color - цвет которым выделяется элемент (кн
 
 
 
-
-
     /*============ <Body> =============*/
 body { 
     font-family: var(--main-font);
@@ -84,15 +82,20 @@ body {
 
 
 
-  /*===========Navigation============ */
+  /*=========== SITE Navigation ============ */
 .navigation-link {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     cursor: pointer;
   }
+
+  /* ДЛЯ ИЗМЕНЕНИЯ ЦВЕТА EMAIL И TEL */
+.contact-list {
+    color: #757575;
+}
 
 .current {
     color: var(--accent-color);
@@ -110,8 +113,33 @@ body {
     letter-spacing: 0.02em;
     color: var(--grey-color);
 }
-/*=========END Navigation========== */
+/*=========END Site Navigation========== */ 
 
+
+/* =============H1================= */
+/* ============= END H1================= */
+  
+
+/*=========PORTFOLIO========== */
+.section-title {
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+}
+.section-description {
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+    /* identical to box height, or 187% */
+    letter-spacing: 0.03em;
+    color: var(--grey-color);
+}
+/*========= END PORTFOLIO========== */
 .section-description {
     color: var(--grey-color);
 }
@@ -161,7 +189,7 @@ body {
 
  .header-title {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
@@ -195,6 +223,7 @@ body {
 /*============= OUR TEAM============== */
 
 .section-team {
+    font-family: var(--main-font);
     font-weight: bold;
     font-size: 36px;
     line-height: 1.43;
