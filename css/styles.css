@@ -21,6 +21,7 @@ accent-color - цвет которым выделяется элемент (кн
 .list {
     list-style: none;
 }
+
 /*========== <УБИРАЕТ МАРКЕРЫ У ЛИНК> ============*/
 
 
@@ -30,6 +31,7 @@ accent-color - цвет которым выделяется элемент (кн
     font-style: normal;
     }
     /*========== <УБИРАЕТ КУРСИВНЫЙ ШРИФТ У АДРЕС> ============*/
+
 
 
 
@@ -108,10 +110,11 @@ body {
     letter-spacing: 0.02em;
     color: var(--grey-color);
 }
-
-
 /*=========END Navigation========== */
 
+.section-description {
+    color: var(--grey-color);
+}
 
 /*===============HERO============== */
 .hero-title {
@@ -156,7 +159,7 @@ body {
 
  /* .list {}  на потом*/
 
- .section-title {
+ .header-title {
     font-weight: bold;
     font-size: 18px;
     line-height: 1.14;
